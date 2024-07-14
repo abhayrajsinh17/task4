@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloths Categories"
+        android:textColor="#090909"
+        android:textSize="32sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"/>
+
+
+    <ImageButton
+        android:id="@+id/menButton"
+        android:layout_width="209dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Men"
+        android:onClick="openMenActivity"
+        android:src="@drawable/men"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryText" />
+
+    <ImageButton
+        android:id="@+id/womenButton"
+        android:layout_width="209dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Women"
+        android:onClick="openWomenActivity"
+        android:src="@drawable/women"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menButton" />
+
+    <ImageButton
+        android:id="@+id/kidsButton"
+        android:layout_width="207dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Kids"
+        android:onClick="openKidsActivity"
+        android:src="@drawable/kids"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/womenButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
